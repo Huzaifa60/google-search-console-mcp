@@ -1,0 +1,49 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bilalnaseer/google-gsc-mcp",
+  "description": "Google Search Console MCP server: search analytics, sitemaps and URL inspection.",
+  "repository": {
+    "url": "https://github.com/bilalnaseer/google-search-console-mcp",
+    "source": "github"
+  },
+  "version": "0.6.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "google-gsc-mcp",
+      "version": "0.6.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WSP_CLIENT_ID",
+          "description": "OAuth Client ID from your own Google Cloud project (Desktop app client).",
+          "isRequired": false
+        },
+        {
+          "name": "WSP_CLIENT_SECRET",
+          "description": "OAuth Client secret that belongs to WSP_CLIENT_ID.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "WSP_OAUTH_FILE",
+          "description": "Absolute path to a downloaded OAuth client JSON file (alternative to WSP_CLIENT_ID and WSP_CLIENT_SECRET).",
+          "isRequired": false
+        },
+        {
+          "name": "WSP_SERVICE_ACCOUNT_FILE",
+          "description": "Absolute path to a service account JSON key (for automation and teams).",
+          "isRequired": false
+        },
+        {
+          "name": "WSP_ALLOW_WRITES",
+          "description": "Set to true to enable write tools (add/remove websites and sitemaps). Off by default.",
+          "isRequired": false,
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}
