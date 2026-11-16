@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/google-gsc-mcp)](https://www.npmjs.com/package/google-gsc-mcp)
 [![npm downloads](https://img.shields.io/npm/dm/google-gsc-mcp)](https://www.npmjs.com/package/google-gsc-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.github.bilalnaseer%2Fgoogle--gsc--mcp-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.bilalnaseer/google-gsc-mcp)
 [![license](https://img.shields.io/github/license/bilalnaseer/google-search-console-mcp)](LICENSE)
 
 Talk to your [Google Search Console](https://search.google.com/search-console/about) data in plain English from Claude, Cursor, Codex, Gemini CLI or any other MCP app.
@@ -53,6 +54,8 @@ This project doesn't ship a login of its own, so your data never goes through an
 | Claude Code | `claude mcp add search-console -e WSP_CLIENT_ID=... -e WSP_CLIENT_SECRET=... -- npx -y google-gsc-mcp` |
 | Cursor | `~/.cursor/mcp.json` |
 | Gemini CLI, Antigravity, others | Your app's MCP config file |
+
+This server is also listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/) as `io.github.bilalnaseer/google-gsc-mcp`, so registry-aware clients can install it directly.
 
 <details>
 <summary><strong>Codex CLI</strong> uses TOML instead</summary>
